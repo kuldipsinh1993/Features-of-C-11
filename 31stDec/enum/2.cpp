@@ -8,10 +8,10 @@ using namespace std;
 int main() 
 { 
 	// Defining enum1 Gender 
-	//enum class Gender { Male,Female }; 
+	enum class Gender { Male,Female }; 
   
 	// Defining enum2 Gender2 with same values 
-	// This will throw error 
+	// This will throw error in C++98
 	enum class Gender2 { Male, Female }; 
   
 	// Creating Gender type variable 

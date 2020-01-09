@@ -1,3 +1,6 @@
+// Bind thread with argument and local variable.
+// Binding thread with structure operator.
+
 #include <iostream>
 #include <thread>
 #include <vector>
@@ -25,8 +28,8 @@ int main()
 	double res2;
 
 	vector<double> vec {1.1,1.2};
-	thread t1{bind(f, vec, &res1)};
-	thread t2{F(vec, &res2)};
+	thread t1{bind(f, vec, &res1)}; // Binding with local variable
+	thread t2{F(vec, &res2)};	// Initialize with Structure Operator
 
 	t1.join();
 	t2.join();

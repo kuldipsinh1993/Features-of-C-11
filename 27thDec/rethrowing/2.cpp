@@ -28,7 +28,7 @@ int main()
 			          "Caught Base b, which is actually a ";
 			b.print();
 			std::cout << "\n";
-			throw; // the Derived object gets sliced here
+			throw; // the Derived object doesn't sliced here
 		}
 	} catch (Base& b) {
 		std::cout <<

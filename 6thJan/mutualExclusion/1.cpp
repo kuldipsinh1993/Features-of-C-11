@@ -13,7 +13,16 @@ int fun(int &num)
 {
 	for(int i=0; i<1000; i++)
 	{
+		// Way 1 : Uncomment for using mutex
+		//m.lock();
 		num++;
+		//m.unlock();
+		
+		// way 2 : Automatic locking
+		//const lock_guard<mutex> lock(m);
+		//num++;
+		
+		
 	}
 	return num;
 }

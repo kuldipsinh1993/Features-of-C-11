@@ -22,7 +22,7 @@ public:
 class student: person
 {
 public:
-	using person::setMarks;
+	using person::person; // Inherite constructor of the Base class
 	void setMarks(int d)
 	{
 		marks = d;

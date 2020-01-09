@@ -2,26 +2,25 @@
 	Date:	27th Dec 2019
 	Author: Jam Kuldipsinh
 
-	Description:	Use of auto.
-	Function:
+	Description: Lambda Function - Used for small functions which are
+		used rarely and which are small.
 *****/
 
 #include <iostream>
 #include <typeinfo>
+#include <vector>
 using namespace std;
 
 int main()
 {
-	auto x = 4;
-	auto y = 3.37;
-	auto ptr = &x;
-	// typeid(type)
-	cout << typeid(x).name() << endl
-		<< typeid(y).name() << endl
-		<< typeid(ptr).name() << endl;
-
-	// typeid(expression)
-	//cout << typeid(x>16) << endl;
-	
+	vector<int> v{1,2,3,4};
+	for(v.begin(), v.end(), [](int i){ cout << i << " "; }
+	cout << endl;
+	    
+	// function to count numbers greater than or equal to 5 
+    	int count_5 = count_if(v.begin(), v.end(), [](int a) 
+    			{ 
+    	    			return (a >= 5); 
+    			}); 
 	return 0;
 }

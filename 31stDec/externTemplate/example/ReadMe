@@ -1,0 +1,3 @@
+g++ -c temp.cpp temp1.cpp
+
+nm -g -C --defined-only *.o

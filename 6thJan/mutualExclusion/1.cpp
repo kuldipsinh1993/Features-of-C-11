@@ -13,9 +13,7 @@ int fun(int &num)
 {
 	for(int i=0; i<1000; i++)
 	{
-		//m.lock();
 		num++;
-		//m.unlock();
 	}
 	return num;
 }

@@ -11,8 +11,8 @@ using namespace std;
 
 int main()
 {
-	int a[4];
-	//alignas(16) int a[4];
+	//int a[4];
+	alignas(16) int a[4];
 	cout << &a[0] << endl;
 	cout << &a[1] << endl;
 	cout << &a[2] << endl;

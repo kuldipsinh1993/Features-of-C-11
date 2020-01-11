@@ -16,7 +16,7 @@ public:
 	}
 };
 
-class B : public A
+class B : public A override
 {
 public:
 	B(){};

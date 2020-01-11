@@ -1,3 +1,8 @@
+/*
+	Variadic template function to print the list of arguments passed
+	to the function.
+*/
+
 #include <iostream>
 #include <vector>
 using namespace std;
